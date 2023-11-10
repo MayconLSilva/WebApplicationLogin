@@ -12,10 +12,12 @@ public class UsuarioModel : IdentityUser
 {
     [MaxLength(50, ErrorMessage = "O tamanho máximo do campo {0} é de {1} caracteres")]
     [Required]
+    [Display(Name = "Nome do usuário")]
     public string nome_usuario { get; set; }
 
     [MaxLength(50, ErrorMessage = "O tamanho máximo do campo {0} é de {1} caracteres")]
     [Required]
+    [Display(Name = "Login do usuário")]
     public string login_usuario { get; set; }
 
 }
